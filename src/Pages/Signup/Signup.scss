@@ -1,0 +1,101 @@
+// Import a Google Font for a modern look, same as in the login page
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.split-screen {
+  display: flex;
+  height: 100vh;
+}
+
+.logo-section {
+  width: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img.logo {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+.form-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: calc(100% - 4rem);
+  max-width: 300px;
+}
+
+.signup-button {
+  padding: 0.5rem;
+  width: calc(100% - 4rem);
+  max-width: 300px;
+}
+
+.signup-links {
+  margin-top: 2rem;
+}
+
+.login-link {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .split-screen {
+    flex-direction: column;
+  }
+
+  .logo-section {
+    width: 100%;
+    padding: 1rem;
+    
+    img.logo {
+      max-width: 50%;
+    }
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .form-input,
+  .signup-button {
+    width: calc(100% - 2rem);
+  }
+}

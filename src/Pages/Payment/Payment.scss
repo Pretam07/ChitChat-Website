@@ -1,0 +1,58 @@
+.payment-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .main-content{
+    display: flex;
+    flex-direction: column;
+
+    .transaction-section {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        padding: 5px;
+      }
+
+      button {
+        padding: 8px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-color: #4285f4;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background-color: #357ae8;
+      }
+
+      .withdraw-funds-button {
+        margin-top: 10px;
+      }
+    }
+
+    .outstanding-charges{
+      h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .ads-section{
+    margin-top: 30px;
+  }
+}

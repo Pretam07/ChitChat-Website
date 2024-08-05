@@ -1,0 +1,119 @@
+@import "../../styles.scss";
+
+.post{
+  transition: background-color 0.3s;
+  background-color: white;
+  border:1px solid #e1e8ed;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 1px;
+  width: 93%;
+  border-radius: 10px;
+
+  @include themify($themes){
+    background-color: themed('bgSoft');
+  }
+
+  .text-body{
+    .text-header{
+      display: flex;
+      flex-direction: column;
+
+      .text-name{
+        display: flex;
+        align-items: center;
+        
+        h3{
+          padding-left: 5px;
+          text-decoration: none;
+        }
+
+        .username{
+          opacity: 0.5;
+          padding-left: 10px;
+          padding-right: 50px;
+        }
+
+        .report-button {
+          margin-left: 5px;
+        }
+
+        .profile-link{
+          text-decoration: none;
+        }
+      }
+
+      .text-description{
+        display: flex;
+        margin-left: 5px;
+        margin-top: 10px;
+        flex-direction: column;
+
+        .post-content{
+          margin-bottom: 15px;
+        }
+
+        .post-image{
+          width: 100%;
+          height: 70vh;
+          object-fit: fill;
+        }
+
+        .video-player{
+          width: 100%;
+          margin-top: -45px;
+        }
+
+        .keywords{
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
+  .text-bottom{
+    .text-footer{
+      display: flex;
+      padding-top: 5px;
+      margin-top: 10px;
+      margin-left: 5px;
+    
+      .footer-content {
+        opacity: 0.3;
+        padding-right: 5px;
+    
+        span{
+          padding-right: 10px;
+        }
+    
+        .icon{
+          padding-right: 5px;
+        }
+    
+        .icon:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.post:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  h3{
+    color: black;
+  }
+
+  .footer-content:hover{
+    opacity: 1;
+  }
+}
+
+.keywords:hover{
+  color: lightblue;
+}
